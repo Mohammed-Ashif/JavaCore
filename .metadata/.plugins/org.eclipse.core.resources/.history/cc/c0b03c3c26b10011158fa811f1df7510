@@ -1,0 +1,41 @@
+package Challenges;
+/**
+ *  @author Unbothered (Mirza Md Ashif Iqbal)
+ */
+import java.util.Scanner; // Import the Scanner class
+import java.util.Random; // Import the Random class
+
+public class userIO {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		// Integer User Input!
+		System.out.print("Please Enter a Number: ");
+		int num = scanner.nextInt();
+		System.out.println("Number: " + num);
+		
+		// There is a problem. If I want to print many string values, 
+		//                     it will only show one!
+		System.out.print("Please Enter a String: ");
+		String str = scanner.next();
+		System.out.println("String: " + str);
+		
+		// Random Number Generator:
+		Random random = new Random();
+		
+		System.out.println("\n");
+		double randNum1 = random.nextDouble();
+		System.out.println("Random Number: " + randNum1);
+		
+		// Specify Domain - 
+		// Generate a random integer between 1 and 20 
+		int randNum2 = random.nextInt(20) + 1; 
+		System.out.println("Specify Domain-wise Random Number: " + randNum2);
+		
+		scanner.close();
+	}
+}

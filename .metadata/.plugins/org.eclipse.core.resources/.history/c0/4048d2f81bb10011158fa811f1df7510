@@ -1,0 +1,22 @@
+package Challenges;
+/**
+ *  @author Unbothered (Mirza Md Ashif Iqbal)
+ */
+import java.io.*;
+import java.util.Scanner; // Import the Scanner class
+
+public class userIO {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.print("Please Enter a Number: ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		
+		System.out.println("Number: " + num);
+		
+	}
+}

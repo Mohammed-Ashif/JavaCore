@@ -1,0 +1,73 @@
+package variablesAndArithmetics;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author Unbothered (Mirza Md Ashif Iqbal)
+ */
+
+public class VariablesAndArithmetics{
+    /*
+      int, float, long, double, char etc are primitive data types
+    */
+	
+    static int myInt = -5; 
+    
+    public static void main (String[] args) {
+        
+        System.out.println("Integer = " + myInt);
+        
+        /*
+          Variables
+        */
+        long myLong = 5;
+        System.out.println("Long = " + myLong);
+        
+        double myDouble = 4.5;
+        System.out.println("Double" + myDouble);
+        
+        float myFloat = (float) 5.5; // Floating point numbers are by default 'Double' in Java.
+        System.out.println("Float = " + myFloat);
+        
+        char myChar = 'M';
+        System.out.println("Char: " + myChar);
+        
+        // Can use uni-code values.
+        char specialCode1 = '\u00AE'; 
+        char specialCode2 = '\u00A9'; 
+        
+        System.out.println(" " + specialCode1 +" & Copyright: " + specialCode2);
+        
+        boolean myBoolean = true;
+        System.out.println("myBoolean -> " + myBoolean);
+        
+        // 'String' is a class in JAVA
+        String myString = "Mugdho";
+        System.out.println("Name: " + myString);
+        
+        
+        /*
+          Arithmetic Operators
+        */
+        int a = 70;
+        float b = (float) 6.7;
+        
+        float answer = a % b;
+        System.out.println("Answer (plus) = " + (a+b));
+        System.out.println("Answer (minus) = " + (a-b));
+        System.out.println("Answer (divide) = " + (a/b));
+        System.out.println("Answer (multiple) = " + (a*b));
+        System.out.println("Answer (remainder) = " + answer);
+        
+        // concatenate
+        String firstName = "Mugdho ";
+        String lastName = "Mirza ";
+        String fullName = firstName + lastName;
+        System.out.println("Full Name: " + fullName);
+    }
+}
+

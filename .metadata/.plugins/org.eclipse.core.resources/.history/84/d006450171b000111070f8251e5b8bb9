@@ -1,0 +1,16 @@
+package loops;
+
+/**
+ * @author Unbothered (Mirza Md Ashif Iqbal)
+ */
+public class Loops {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

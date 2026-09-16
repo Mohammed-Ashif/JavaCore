@@ -1,0 +1,69 @@
+package relationalAndLogical;
+
+/**
+*
+* @author Unbothered (Mirza Md Ashif Iqbal)
+*/
+
+public class RelationalAndLogical {
+	public static void main(String[] args) {
+		int a = 5;
+		int b = 3;
+		
+		// Increment
+		a = a + 2; // a += 2;
+		System.out.println(a);
+		System.out.println("b Before = " + b++);
+		System.out.println("b After = " + ++b);
+		
+		// Decrement
+		a = a - 3; // a -= 3;
+		System.out.println(a);
+		System.out.println("b Before = " + b--);
+		System.out.println("b After = " + --b);
+		
+		// Other Simplifications
+		a *= 2;
+		b /= 3;
+		System.out.println("a = " + a + " & b = " + b);
+		
+		boolean ans0 = a != b;
+		System.out.println("Boolean Condition Checking (a != b): " + ans0);
+		
+		boolean ans1 = a == b;
+		System.out.println("Boolean Condition Checking (a == b): " + ans1);
+		
+		boolean ans2 = a > b;
+		System.out.println("Boolean Condition Checking (a > b): " + ans2);
+		
+		boolean ans3 = a >= b;
+		System.out.println("Boolean Condition Checking (a >= b): " + ans3);
+		
+		boolean ans4 = a < b;
+		System.out.println("Boolean Condition Checking (a < b): " + ans4);
+		
+		boolean ans5 = a <= b;
+		System.out.println("Boolean Condition Checking (a <= b): " + ans5);
+		
+		boolean ans6 = a == 8 || b == 2;
+		System.out.println("Boolean Condition Checking (a == 8 OR b == 2): " + ans6);
+		
+		boolean ans7 = a == 8 && b == 1;
+		System.out.println("Boolean Condition Checking (a == 8 AND b == 1): " + ans7);
+	
+		System.out.println("\n");
+		
+		if (a > 3) {
+			System.out.println("A is greater than 3.");
+		} else {
+			System.out.println("A is smaller than 3 or equal to 3.");
+		}
+		System.out.println("\n Continue...! \n");
+		
+		if (ans1 == true) {
+			System.out.println("A is equal to B.");
+		} else {
+			System.out.println("A is not equal to B.");
+		}
+	}
+}
