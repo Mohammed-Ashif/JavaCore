@@ -107,9 +107,13 @@ public class guessTheNumber {
 		if (beginGame == 2) {
 			System.out.println("We will meet again soon!");
 			System.out.println("Till then, Good Bye!");
+			
 		} else {
 			System.out.println("Invalid Input");
+			
 		}
+		
 		sc.close();
 	}
+
 }

@@ -60,17 +60,16 @@ public class guessTheNumber {
 			System.out.print("Generating a random number between 1 - 37...\n");
 			
 			Random rand = new Random();
-			int randNum = rand.nextInt(37) + 1; 
+			int randNum =  5;// rand.nextInt(37) + 1; 
 			
-			System.out.println("Random number has been generated.");
-			System.out.println("You have 5 Tokens.");
+			System.out.println("Random number has been generated. ");
 			System.out.print("Make your guess - ");
 			int guess = sc.nextInt();
 			
 			do {
 				count++;
 				if (count > 5) {
-					System.out.println("You have failed. You are out of token.");
+					System.out.println("You have failed.");
 					System.out.println("The random number is - " + randNum);
 					break;
 				}
@@ -87,14 +86,12 @@ public class guessTheNumber {
 				}
 				System.out.print("Guess Again - ");
 				guess = sc.nextInt();
-				System.out.print("\n");
 			} while (guess != randNum);
 			
 			if ( guess == randNum) {
 				System.out.println("You have guessed it right! Congratulations!");
 				System.out.println("The Random Number Is - " + randNum);
-				System.out.println("Your Guess was: " + guess);
-				System.out.println("Chance Took to Guess: " + count + "\n");
+				System.out.println("Your Guess was: " + guess + "\n");
 			}
 			
 			System.out.println("Want to play again? - ");
@@ -107,9 +104,13 @@ public class guessTheNumber {
 		if (beginGame == 2) {
 			System.out.println("We will meet again soon!");
 			System.out.println("Till then, Good Bye!");
+			
 		} else {
 			System.out.println("Invalid Input");
+			
 		}
+		
 		sc.close();
 	}
+
 }
