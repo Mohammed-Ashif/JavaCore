@@ -43,7 +43,7 @@ public class guessTheNumber {
 		String name = sc.nextLine();
 		
 		System.out.println("Hello " + name + "\n");
-		// sc.nextLine();
+		sc.nextLine();
 		
 		System.out.print("Shall we start? - ");
 		System.out.print("\t1. Yes");

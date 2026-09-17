@@ -1,7 +1,5 @@
 package Challenges;
 
-import java.util.Scanner;
-
 /**
  *  @author Unbothered (Mirza Md Ashif Iqbal)
  */
@@ -35,21 +33,9 @@ public class guessTheNumber {
 		 * 		tell the user to guess higher or lower.
 		 * If the User failed 5 times, show a game over message and quit the game
 		 */
-		Scanner sc = new Scanner (System.in);
 		
-		System.out.println("Welcome to Wonderland \n");
-		System.out.print("May I have your name? - ");
-		
-		String name = sc.nextLine();
-		
-		System.out.println("Hello " + name + "\n");
-		// sc.nextLine();
-		
-		System.out.print("Shall we start? - ");
-		System.out.print("\t1. Yes");
-		System.out.print("\t2. No");
-		
-		sc.close();
+
+
 	}
 
 }

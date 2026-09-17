@@ -40,10 +40,10 @@ public class guessTheNumber {
 		System.out.println("Welcome to Wonderland \n");
 		System.out.print("May I have your name? - ");
 		
-		String name = sc.nextLine();
-		
+		String name = sc.next();
+		sc.next();
 		System.out.println("Hello " + name + "\n");
-		// sc.nextLine();
+		
 		
 		System.out.print("Shall we start? - ");
 		System.out.print("\t1. Yes");
