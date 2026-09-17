@@ -48,9 +48,8 @@ public class guessTheNumber {
 		
 		System.out.println("Shall we start? - ");
 		System.out.print("\t1. Yes");
-		System.out.println("\t2. No");
+		System.out.print("\t2. No");
 		
-		System.out.print("Response: ");
 		int beginGame = sc.nextInt();
 		
 		while (beginGame == 1) {
@@ -61,7 +60,7 @@ public class guessTheNumber {
 			int randNum = rand.nextInt(37) + 1; 
 			
 			System.out.println("Random number has been generated. ");
-			System.out.print("Make your guess - ");
+			System.out.print("Make your guess - .");
 			int guess = sc.nextInt();
 			
 			do {
@@ -75,7 +74,7 @@ public class guessTheNumber {
 				else {
 					System.out.println("Invalid Input!");
 				}
-				System.out.print("Guess Again - ");
+				
 				guess = sc.nextInt();
 			} while (guess != randNum);
 			
@@ -87,8 +86,7 @@ public class guessTheNumber {
 			
 			System.out.println("Want to play again? - ");
 			System.out.print("\t1. Yes");
-			System.out.println("\t2. No");
-			System.out.print("Response: ");
+			System.out.print("\t2. No");
 			beginGame = sc.nextInt();
 		} 
 		

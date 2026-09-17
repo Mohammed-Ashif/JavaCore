@@ -75,7 +75,7 @@ public class guessTheNumber {
 				else {
 					System.out.println("Invalid Input!");
 				}
-				System.out.print("Guess Again - ");
+				
 				guess = sc.nextInt();
 			} while (guess != randNum);
 			
