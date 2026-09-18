@@ -1,0 +1,59 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class applicationsOfArray {
+
+	public static void main(String[] args) {
+		// TODO 
+		// In this application, I'm going to simulate the contact application on the phone.
+		// 						I'm going to show a list of different contact's name on a phone for the user.
+		// By typing the contact's name, we are going to give the user that contact's number
+		
+		System.out.println("\n");
+		Scanner scanner = new Scanner(System.in);
+		
+		// In order to simulate that first of all, we are going to need a string array
+		String[] contactNames = {
+									"Mugdho", 
+									"Niha", 
+									"Onol", 
+									"Hasseb", 
+									"Emdad"
+								};
+		
+		int[] contactNumbers = {
+									1766, 
+									1534,
+									1618,
+									1929,
+									1817
+							   };
+		
+		System.out.println("Contact Names:");
+		for (int i = 0; i < contactNames.length; i++) {
+			System.out.print(i+1 + ". ");
+			System.out.println(contactNames[i]);
+		}
+		
+		System.out.print("\n Please Enter a Name: ");
+		String name = scanner.next();
+		boolean contactFound = false;
+		
+		// String values are compared using '=='.
+		// You are checking the equality of 2 strings by a reference (The Reference inside the devices memory RAM).
+		for (int i = 0; i < contactNames.length; i++) {
+			// .equals() method helps with matching the String values.
+			if (name.equals(contactNames[i])) {
+				System.out.println("Contact Number: " + contactNumbers[i]);	
+				contactFound = true;
+			}
+		}
+		
+		if (!contactFound) 
+			System.out.println("Contact Not Found!");
+				
+		scanner.close();
+	}
+
+}

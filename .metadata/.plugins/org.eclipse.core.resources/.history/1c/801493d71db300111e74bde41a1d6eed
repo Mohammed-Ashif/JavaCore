@@ -1,0 +1,17 @@
+package Arrays;
+
+public class Simple_Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] std = new String[5];
+		
+		std[1] = "Ashif"; // Array starts with 0th position. Which means 1 is the second position.
+		
+		System.out.println(std[0]); // First Index: Null
+		System.out.println(std[1]); // Second Index: Ashif
+		
+		
+	}
+
+}
