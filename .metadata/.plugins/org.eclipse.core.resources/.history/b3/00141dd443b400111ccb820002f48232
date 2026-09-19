@@ -1,0 +1,10 @@
+package OOP_part01;
+
+public class Tablet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

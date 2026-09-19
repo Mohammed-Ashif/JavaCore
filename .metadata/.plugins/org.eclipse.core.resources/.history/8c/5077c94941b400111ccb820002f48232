@@ -1,0 +1,15 @@
+package OOP_part01;
+
+public class Phone {
+	String name;
+	String deviceBody;
+	float screenSize;
+	int memoryRAM;;
+	int memoryROM;
+	int camera;
+	
+	// Method
+	public void playMusic ( String trackName ) {
+		System.out.println("Playing " + trackName);
+	}
+}

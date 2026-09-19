@@ -1,0 +1,28 @@
+package OOP_part01;
+
+public class section1 {
+
+	public static void main(String[] args) {
+		/* TODO 
+			How can we define a Car in JAVA?
+			- It is possible with Object Oriented Programming
+		*/
+		
+		// instantiate 'Phone' class (name the Instance)
+		Phone iPhone = new Phone(); // new instance of the object
+		
+		// We can access all of the fields of the object instance
+		iPhone.name = "iPhone 11";
+		iPhone.deviceBody = "Metal & Glass";
+		iPhone.memoryRAM = 4;
+		iPhone.memoryROM = 128;
+		iPhone.screenSize = (float) 6.1;
+		
+		System.out.println(iPhone); 		// It will show memory allocation location
+		System.out.println(iPhone.name); 	// We can see the output of a specific field
+		
+		// Accessing Method from 'Phone' class
+		iPhone.playMusic("Mirror by Timberlake");
+	}
+
+}

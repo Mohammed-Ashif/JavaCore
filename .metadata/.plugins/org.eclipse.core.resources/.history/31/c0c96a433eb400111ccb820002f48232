@@ -1,0 +1,10 @@
+package OOP_part01;
+
+public class Phone {
+	String name;
+	String deviceBody;
+	int screenSize;
+	int memoryRAM;;
+	int memoryROM;
+	int camera;
+}
